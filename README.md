@@ -23,6 +23,15 @@ $ sudo bash establish.sh
 ```
 
 
+# How to uninstall safely
+The following commands must be executed as root
+```bash
+rm /etc/udev/rules.d/01-usblockdown.rules
+chattr -i -R /root/USBAuth
+rm -rf /root/USBAuth
+```
+
+
 # Contributions
 - The only operating system that this script is tested on is **ubuntu:19.10**
 - I don't have any idea about the compatibility of the script with other Linux based OS
