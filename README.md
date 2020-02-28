@@ -3,7 +3,7 @@ This is a simple system tweak to disallow any usb device that is to be connected
 
 # Warning
 - While installing the script please take the precautions the the script is configured correctly
-- It ignored, there is a little chance that the rules misbehieve cutting the user off entirly from accessing the system
+- If ignored, there is a little chance that the rules misbehieve cutting the user off entirly from accessing the system
 - It is farely safe to use on laptops, as the keyboard is not connected to the USB bus, improving the chances of fixing the problem
 - Where the problems could occour
      - If facing difficulty connecting any devices after configuring the script, check the `/etc/udev/rules.d/01-usblockdown.rules` file, that the rule for accessing the `/root/USBAuth/auth-check.sh` is present
